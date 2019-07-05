@@ -1,4 +1,4 @@
-//Programa que calcule la edad de una persona y me diga si es mayor o menor de edad
+//Programa calcula edad es mayor obtiene licencia y si es menor no obtiene licencia de conducir
 package tarea;
 import java.util.Scanner;
 
@@ -13,9 +13,11 @@ public class Tarea {
         act=x.nextInt();
         int edad=act-a;
 if (edad>0 && edad<18)
-  System.out.println("La persona tiene "+edad+ " años es menor de edad");
+  System.out.println("La persona tiene "+edad+ " años es menor de edad"
+  + "Por lo tanto no puede obtener permiso de conducción");
   else  if (edad>18 && edad<100)
-  System.out.println("La persona tiene "+edad+ " años es mayor de edad");
+  System.out.println("La persona tiene "+edad+ " años es mayor de edad "
+  + "Por lo tanto puede obtener permiso para conducir");
   else if (edad>100)
   System.out.println("edad incorrecta por favor ingrese nuevamente el año de nacimiento");
 
